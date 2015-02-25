@@ -1,7 +1,7 @@
 FROM ruby:2.1.2
 # Creates a docker container with Ruby and Oracle's Java 7
 MAINTAINER Koan Health <development@koanhealth.com>
-
+# We were missing this command
 RUN apt-get update && apt-get install procps
 RUN \
     echo "===> add webupd8 repository..."  && \
